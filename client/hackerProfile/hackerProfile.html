@@ -1,35 +1,39 @@
 <template name="hackerProfile">
-	<div class="col-xs-12" id="form">
-		<form class="form-horizontal" role="form">
-			<div class="form-group">
-				<label class="control-label col-sm-3">Legal Name</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" id="legalName" placeholder="None of your business.">
-				</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12" id="form">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="legalName">Legal Name</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="legalName" placeholder="None of your business.">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="pseudonym">Pseudonym</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="pseudonym" placeholder="Not Your Legal Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="email">Email</label>
+						<div class="col-sm-6">
+							<input type="email" class="form-control" id="email" placeholder="example@example.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="bestHack">Best Hack</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="bestHack" placeholder="Describe your best hack.">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-6">
+							<button type="submit" class="btn btn-default" id="submit">Submit</button>
+						</div>
+					</div>
+				</form>
 			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-3">Pseudonym</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" id="pseudonym" placeholder="Not Your Legal Name">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-3">Email</label>
-				<div class="col-sm-6">
-					<input type="email" class="form-control" id="email" placeholder="example@example.com">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-3">Best Hack</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" id="bestHack" placeholder="Describe your best hack.">
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-3 col-sm-6">
-					<button type="submit" class="btn btn-default" id="submit">Submit</button>
-				</div>
-			</div>
-		</form>
+		</div>
 	</div>
 </template>
