@@ -1,6 +1,5 @@
 Template.hackerProfile.events({
-	'click #submit': function(){
-		//event.preventDefault();
+	'click #submit': function(event, template){
 		let legalName = template.find('#legalName').value;
 		let pseudonym = template.find('#pseudonym').value;
 		let email = template.find('#email').value;
